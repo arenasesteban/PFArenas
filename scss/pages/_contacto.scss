@@ -1,0 +1,104 @@
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop-spacing(false);
+    @include tablet {
+        @include tablet-spacing(false);
+    }
+    @include mobile {
+        @include mobile-spacing(false);
+    }
+
+    .contact-container {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        background-color: $primary-color;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        @include tablet {
+            width: 420px;
+            padding: 45px;
+        }
+        @include mobile {
+            width: 300px;
+            padding: 30px;
+        }
+
+        .contact-group {
+            width: 90%;
+
+            .subtitle {
+                margin-bottom: 20px;
+                @include tablet {
+                    margin-bottom: 10px;
+                }
+                @include mobile {
+                    margin-bottom: 0;
+                }
+            }
+
+            .form-group {
+                color: $secondary-color;
+                width: 100%;
+                padding: 5px 0;
+
+                label {
+                    font-size: 1rem;
+                    margin-bottom: 10px;
+                    @include tablet {
+                        font-size: .9rem;
+                    }
+                    @include mobile {
+                        font-size: .8rem;
+                    }
+                }
+
+                input, textarea {
+                    width: 100%;
+                    font-size: 1rem;
+                    padding: 5px 10px;
+                    @include tablet {
+                        font-size: .9rem;
+                    }
+                    @include mobile {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+
+        .button-form {
+            button {
+                width: 100%;
+                background-color: $secondary-color;
+                color: $primary-color;
+                font-size: .9rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 12px;
+                margin-top: 10px;
+                border-radius: 5px;
+                border: 2px solid $secondary-color;
+                transition: 0.2s;
+                @include tablet {
+                    font-size: .8rem;
+                }
+                @include mobile {
+                    font-size: .75rem;
+                    padding: 10px;
+                }
+                
+                &:hover {
+                    color: $secondary-color;
+                    background-color: $primary-color;
+                    border: 2px solid $secondary-color;
+                }
+            }
+        }
+    }
+}

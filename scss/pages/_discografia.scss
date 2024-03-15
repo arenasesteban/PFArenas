@@ -1,0 +1,182 @@
+#discography {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+    background-image: url(../images/banner_2.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .album-container {
+        width: 920px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        @include desktop-spacing(false);
+        background-color: rgba(0, 0, 0, .8);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+        border-radius: 5px;
+        @include tablet {
+            width: 740px;
+            padding: 15px;
+            @include tablet-spacing(false);
+        }
+        @include mobile {
+            width: 95%;
+            flex-direction: column;
+            padding: 10px;
+            @include mobile-spacing(false);
+        }
+
+        .album-1, .album-2 {
+            width: 50%;
+            @include mobile {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .subtitle {
+                color: $primary-color;
+                margin-bottom: 20px;
+                @include tablet {
+                    margin-bottom: 10px;
+                }
+                @include mobile {
+                    margin-bottom: 0;
+                }
+
+                .subtitle-border {
+                    border-color: $primary-color;
+                }
+            }
+
+            .album-details {
+                font-size: 1rem;
+                display: flex;
+                padding: 5px;
+                @include tablet {
+                    font-size: .9rem;
+                }
+                @include mobile {
+                    font-size: .8rem;
+                }
+
+                p {
+                    width: 50%;
+                    margin: 5px;
+
+                    &:first-of-type {
+                        font-weight: 600;
+                        border-right: 1px solid $primary-border;
+                    }
+                }
+            }
+        }
+
+        .album-link {
+            width: 50%;
+            @include mobile {
+                width: 100%;
+            }
+
+            iframe {
+                @include mobile {
+                    height: 152px;
+                }
+            }
+        }
+    
+        &:first-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .table-container {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        padding: 15px;
+        @include desktop-spacing(false);
+        @include tablet {
+            @include tablet-spacing(false);
+        }
+        @include mobile {
+            width: 95%;
+            overflow-x: auto;
+            @include mobile-spacing(false);
+        }
+    
+        table {
+            color: $secondary-color;
+            border-collapse: collapse;
+            background-color: $primary-color;
+
+            thead {
+                th {
+                    border-top: 2px solid $primary-border;
+                    border-bottom: 2px solid $primary-border;
+                    padding: 10px 20px;
+                    @include tablet {
+                        font-size: .95rem;
+                    }
+                    @include mobile {
+                        font-size: .8rem;
+                    }
+                }
+            }
+            
+            tbody {
+                tr {
+                    td {
+                        border-bottom: 1px solid $primary-border;
+                        padding: 10px 20px;
+                        white-space: nowrap;
+                        @include tablet {
+                            font-size: .95rem;
+                        }
+                        @include mobile {
+                            font-size: .8rem;
+                        }
+
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            @include tablet {
+                                width: 23px;
+                                height: 23px;
+                            }
+                            @include mobile {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    
+                        &:last-of-type {
+                            text-align: center;
+                        }
+                    }
+
+                    &:last-of-type {
+                        td {
+                            border-bottom: unset;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: $primary-border;
+                        transition: 0.1s;
+                    }
+                }
+            }
+        }
+    }
+}

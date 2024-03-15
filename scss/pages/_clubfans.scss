@@ -1,0 +1,64 @@
+#aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop-spacing(true);
+    @include tablet {
+        @include tablet-spacing(true);
+    }
+    @include mobile {
+        @include mobile-spacing(true);
+    }
+
+    .about-us-banner {
+        margin-bottom: 20px;
+        @include tablet {
+            margin-bottom: 15px;
+        }
+        @include mobile {
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 1000px;
+            object-position: bottom;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+            @include tablet {
+                width: 700px;
+            }
+            @include mobile {
+                width: 300px;
+            }
+        }
+    }
+
+    .about-us-description {
+        width: 1000px;
+        color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        @include tablet {
+            width: 90%;
+        }
+        @include mobile {
+            width: 85%
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            @include tablet {
+                font-size: 1rem;
+            }
+            @include mobile {
+                font-size: .75rem;
+                margin: 5px 0;
+            }
+        }
+    }
+}

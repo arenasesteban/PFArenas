@@ -1,0 +1,73 @@
+header {
+    margin-bottom: 80px;
+
+    .navbar {
+        padding: 5px;
+        background-color: $primary-color !important;
+        @include tablet {
+            padding: 7px 0;
+        } 
+        @include mobile {
+            padding: 10px 0;;
+        }
+
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: 700;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            @include tablet {
+                font-size: 1.7rem;
+            }
+            @include mobile {
+                font-size: 1.4rem;
+            }
+
+            img {
+                height: 60px;
+                margin-right: 10px;
+                @include tablet {
+                    height: 55px;
+                }
+                @include mobile {
+                    height: 50px;
+                    margin-right: 2px;
+                }
+            }
+        }
+
+        .navbar-nav {
+            a {
+                height: 50px;
+                font-size: 1rem;
+                font-weight: 600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                padding: 0 10px;
+                @include tablet {
+                    height: 45px;
+                    font-size: .9rem;
+                }
+                @include mobile {
+                    height: 40px;
+                    font-size: .8rem;
+                }
+            }
+
+            li {
+                font-weight: 400;
+                list-style: none;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: $primary-border;
+                    transition: 0.5s;   
+                }
+            }
+        }
+    }
+}
