@@ -1,4 +1,4 @@
-# Proyecto Final del Curso de Desarrollo Web - Coderhouse
+# Proyecto Final - Desarrollo Web | Coderhouse
 
 Este repositorio contiene el proyecto final realizado como parte del curso de Desarrollo Web en Coderhouse. El proyecto se desarrolló con fines educativos y demostrativos, permitiendo así aplicar conocimientos adquiridos durante el curso. Se trata de una fan page dedicada al reconocido artista musical argentino, Paulo Londra.
 
@@ -7,13 +7,22 @@ Este repositorio contiene el proyecto final realizado como parte del curso de De
 - HTML
 - CSS
 - SASS
-- Boostrap 5
+- Bootstrap 5
 - Visual Studio Code 
+
+## Versiones Anteriores
+
+A continuación se muestra una tabla con los repositorios de versiones anteriores correspondientes a las pre-entregas del proyecto final:
+
+| Pre-Entrega | Repositorio |
+|-------------|-------------|
+| Pre-Entrega 1 | [Link](https://github.com/arenasesteban/PreEntrega1Arenas) |
+| Pre-Entrega 2 | [Link](https://github.com/arenasesteban/PreEntrega2Arenas) |
+| Pre-Entrega 3 | [Link](https://github.com/arenasesteban/PreEntrega3Arenas) |
 
 ## Créditos
 
-Este proyecto fue creado por:
-
-* Autor: Esteban Arenas
-* Curso: Desarrollo Web
-* Comisión: 66115
+* **Autor:** Esteban Arenas
+* **Curso:** Desarrollo Web
+* **Comisión:** 66115
+* **Fecha de entrega:** 15 de Marzo de 2024
